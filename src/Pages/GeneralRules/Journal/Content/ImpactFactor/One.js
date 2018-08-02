@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import GuessTheSolution1 from '../../../../../Gaming/GuessTheSolution/GuessTheSolution_1';
+
 class One extends Component {
   render() {
     return (
@@ -35,6 +37,7 @@ class One extends Component {
                 </div>
                 <div className="col-md-2"></div>
             </div>
+            <GuessTheSolution1/>
         </div>
     );
   }

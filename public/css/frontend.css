@@ -13,6 +13,8 @@ h2 {font-size: 3.8rem; font-weight: bold;margin-top:4rem;margin-bottom:3rem;}
 h3 {font-weight: bold; font-size: 2.4rem;}
 h4 {font-weight: 300; font-size: 2.4rem;}
 h5 {font-weight: 700; font-size: 1.6rem; text-transform: uppercase;letter-spacing: 0.2rem;}
+.h-game {font-size: 2.8rem; font-weight: bold;margin-top:4rem;margin-bottom:3rem;line-height: 3.4rem;}
+
 
 ul {list-style-image:url('../img/bullet.gif');}
 
@@ -46,6 +48,24 @@ ul {list-style-image:url('../img/bullet.gif');}
     font-weight: bold;
     display: inline-block;
     padding:1rem;
+}
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.center-div{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 30%;
+  border-radius: 3px;
 }
 
 
@@ -106,6 +126,7 @@ ul {list-style-image:url('../img/bullet.gif');}
 .side .box-siderbar h4 {border-top:2px solid black;padding-top:1.5rem;}
 .side .box-siderbar ul li {margin-top:1rem;} 
 .side p {margin-top:2rem;}
+.side img {margin-top:3rem; margin-bottom:3rem;}
 
 
 /*!
@@ -141,7 +162,39 @@ ul {list-style-image:url('../img/bullet.gif');}
     text-align: center;
 }  
 
-
+/*!
+ * ========== GAME 
+ */
+.boxGame {
+    background-color: white; 
+    padding:0px;
+    -webkit-box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.1);
+    min-height: 25rem; 
+}
+.boxGame .row {margin:0px ;}
+.boxGame .headBox {}
+.boxGame .headBox .brand {background-color: #F2EFEF;text-align: center;padding:1rem;}
+.boxGame .headBox .title {text-align: left; padding:1rem; background-color: #363636;}
+.boxGame .headBox .title .name {color: white; font-size:2.2rem; font-weight: bold;float:left; padding:0.8rem;margin-left:1rem;}
+.boxGame .headBox .title .name img, .boxGame .headBox .title .pif img {margin-right:1rem;}
+.boxGame .headBox .title .pif {color: white; font-size:2.2rem; font-weight: bold;float:right; padding:0.8rem;}
+.points {color:#E62735; font-size:2.1rem;}
+.boxGame .contBox .qicon {height:100%;padding:4rem 2rem;}
+.boxGame .contBox .question, .boxGame .contBox .error, .boxGame .contBox .win {
+    vertical-align: middle;
+    padding:3rem;
+}
+.boxGame .choose {padding-top:2rem;padding-bottom:2rem;}
+.boxGame .btn-choose {background-color:#E5E5E5; color:#707070;font-weight: bold;min-width: 15rem;border-radius: 0px;padding:0.8rem;border:0px;margin-left:5px; margin-right:5px;}
+.boxGame .btn-choose:hover {background-color:#F4F4F4}
+.boxGame .btn-choose:active, .boxGame .active {background-color: #EF3340; color:white; box-shadow: none;} 
+.boxGame .contBox .error .h-game {color: #EF3340;}
+.boxGame .contBox .error .msg {font-weight: bold; font-size: 1.8rem;}
+.boxGame .contBox .win .correct {color: #EF3340; font-size:2.4rem;font-weight: bold;margin-top:1.5rem;}
+.boxGame .contBox .win .correct .ok-icon {color: #EF3340; font-size:2.4rem;}
+.boxGame .btn-readmore {float:right; margin:2rem;}
 
 /*!
  * ========== SCROLLING LETTERS ANIMATION CLASS
@@ -174,24 +227,11 @@ ul {list-style-image:url('../img/bullet.gif');}
 .content__text span {
     display: inline-block;
 }
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-}
 
-.center-div{
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: 30%;
-  border-radius: 3px;
-}
+
+/*!
+ * ========== MEDIA QUERIES
+ */
 
 
 @media (min-width: 1440px) {
